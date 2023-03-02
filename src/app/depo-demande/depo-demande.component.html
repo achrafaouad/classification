@@ -1,0 +1,2541 @@
+<p style="text-decoration:underline">Déposer une demande</p>
+
+<mat-stepper [linear]="false" #stepper>
+    <mat-step [stepControl]="firstFormGroup" label="Etape 1">
+        <div class="card">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <div class="seven">
+                    <h1>Identification de l'entreprise</h1>
+                  </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Statut de la demande</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Nouvelle demande
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Demande de réexamen
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Demande de renouvellement
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Identification de l'entreprise</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nom ou raison Sociale de
+                                    l'entreprise
+                                </div>
+                                <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   ></div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Sigle usuel
+                                </div>
+                                <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   ></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Address du
+                                    Siège social
+                                </div>
+                                <div class="col-sm-3"><textarea type="text" class="form-control" style="height:20px"   ></textarea></div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Région</div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example">
+                                        <option selected>choisie votre région</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Téléphone
+                                </div>
+                                <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   ></div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">ville</div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example">
+                                        <option selected>choisie votre ville</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Fax
+                                </div>
+                                <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   ></div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Address
+                                    Email</div>
+                                <div class="col-sm-3">
+                                    <input type="email" class="form-control" style="height:20px"   >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Form
+                                    Juridique
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example">
+                                        <option selected>choisie la form juridique</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Date de
+                                    creation</div>
+                                <div class="col-sm-3">
+                                    <input type="date" class="form-control" style="height:20px"   >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">capital
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" style="height:20px"    placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text" id="basic-addon1">MDH</span>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`de
+                                    registre de commerce</div>
+                                <div class="col-sm-3">
+                                    <input type="number" class="form-control" style="height:20px"   >
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N` de CNSS
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" style="height:20px"    aria-label="Username"
+                                            aria-describedby="basic-addon1">
+
+
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Part
+                                    Marocaine dans le capital</div>
+                                <div class="col-sm-3">
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" style="height:20px"    placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text" id="basic-addon1">%</span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">copie de RC</div>
+                                <div class="col-sm-6"><input type="file"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Secteur d'activité</p>
+
+                    </div>
+                    <div class="card-body">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Secteur d'activité</mat-label>
+                            <mat-select [formControl]="toppings" multiple>
+                                <mat-select-trigger>
+                                    {{toppings.value?.[0] || ''}}
+                                    <span *ngIf="(toppings.value?.length || 0) > 1"
+                                        class="example-additional-selection">
+                                        (+{{(toppings.value?.length || 0) - 1}} {{toppings.value?.length === 2 ? 'other'
+                                        : 'others'}})
+                                    </span>
+                                </mat-select-trigger>
+                                <mat-option *ngFor="let topping of toppingList"
+                                    [value]="topping">{{topping}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">principaux Dirigants de l'entreprise(PDG,DG,Gérant,chef de département,Chef de chantier)</p>
+
+
+                    </div>
+                    <div class="card-body">
+
+<!-- todo -->
+
+<table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+<tbody>
+    <tr class="dataGridHead alignCenter">
+        <th scope="col">Nom</th>
+        <th scope="col">prénom</th>
+        <th scope="col">Fonction</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">Années d'experience</th>
+        <th scope="col">Action</th>
+    </tr>
+
+    <tr *ngFor="let ele of dirigants;let i= index">
+        <td *ngIf="!ele.expanded">{{ele.name}}</td>
+        <td *ngIf="!ele.expanded">{{ele.prenom}}</td>
+        <td *ngIf="!ele.expanded">{{ele.fonction}}</td>
+        <td *ngIf="!ele.expanded">{{ele.qualification}}</td>
+        <td *ngIf="!ele.expanded">{{ele.anneeExp}}</td>
+      
+        <!--  -->
+        <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                [(ngModel)]="object.name"></td>
+        <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                [(ngModel)]="object.prenom"></td>
+        <td *ngIf="ele.expanded">
+            <select class="form-select" style="height:25px" aria-label="Default select example"
+                [(ngModel)]="object.fonction">
+                <option selected>choisie la fonction</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </td>
+        <td *ngIf="ele.expanded">
+            <select class="form-select" style="height:25px" aria-label="Default select example"
+                [(ngModel)]="object.qualification">
+                <option selected>choisie la qualification</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </td>
+        <td *ngIf="ele.expanded">
+            <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.anneeExp">
+        </td>
+      
+
+        <!--  -->
+       
+        <td>
+            <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                (click)="selected_dirigants(i);ele.expanded =!ele.expanded;"><i
+                    class="bi bi-pencil"></i></button>
+            <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                style="margin:10px" (click)="selected_dirigants(i);ele.expanded =!ele.expanded;"><i
+                    class="bi bi-check"></i></button>
+            <button type="button" id="pkdpkf" class="myButton2"
+                style="margin:10px;background-color:red" (click)="selected_dirigants(i)"><i
+                    class="bi bi-trash2"></i></button>
+        </td>
+    </tr>
+
+
+
+
+
+
+
+
+</tbody>
+</table>
+<button mat-raised-button color="primary"
+(click)="showADDdirigants = !showADDdirigants">  Ajouter un Dirigant </button>
+
+<div class="card" *ngIf="showADDdirigants">
+    <p
+        style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+        Ajouter un Dirigant</p>
+<!-- <div class="card-body"></div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nom de Dirigant
+            </div>
+            <div class="col-sm-3"><input type="text" class="form-control" style="height:20px" [(ngModel)]="object.name"  ></div>
+            <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);" [(ngModel)]="object.prenom">Prénom de Dirigant
+            </div>
+            <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   ></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Fonction de
+                Dirigant
+            </div>
+            <div class="col-sm-3">  
+                 <select class="form-select" style="height:25px" aria-label="Default select example"
+                [(ngModel)]="object.fonction">
+                <option selected>choisie la fonction</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select></div>
+            <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nombre d'année
+                d'éxperiance </div>
+            <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   ></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Qualification </div>
+            <div class="col-sm-3">
+                <select class="form-select" style="height:25px" aria-label="Default select example"
+                            [(ngModel)]="object.qualification">
+                            <option selected>choisie la qualification</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" style="background-color: #609966;"
+        (click)="add_dirigants()"> Ajouter </button>
+
+
+</div>
+
+<!-- todo -->
+
+
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div>
+            <!-- <button mat-button matStepperPrevious>Suivant</button> -->
+            <button matStepperNext mat-raised-button color="primary">Suivant</button>
+        </div>
+
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Etape 2">
+        <div class="card">
+            <div class="card-header">
+                
+            </div>
+            <div class="card-body">
+                <div class="seven">
+                    <h1>Moyens de l'entreprise</h1>
+                  </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">List des ingenieurs</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">prénom</th>
+                                    <th scope="col">Spesialité</th>
+                                    <th scope="col">Profil</th>
+                                    <th scope="col">Fonction</th>
+                                    <th scope="col">Nationalité</th>
+                                    <th scope="col">N`CNSS</th>
+                                    <th scope="col">Diplôme/cv</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+
+                                <tr *ngFor="let ele of ingenieurs;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.name}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.prenom}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.specialite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.profil}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.fonction}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.nationalite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.cnss}}</td>
+                                    <!--  -->
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></td>
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.profil">
+                                            <option selected>choisie votre profil</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.fonction">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.cnss">
+                                    </td>
+
+                                    <!--  -->
+                                    <td><button class="btn"><i class="bi bi-filetype-pdf"
+                                                style="width:200px"></i></button> <button class="btn"><i
+                                                class="bi bi-filetype-pdf"></i></button></td>
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px" (click)="selected(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red" (click)="selected(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary"
+                            (click)="showADDingenieurs = !showADDingenieurs">Ajouter un Ingenieur </button>
+
+                        <div class="card" *ngIf="showADDingenieurs">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Ingenieur</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Prénom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Spesialité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Fonction
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.fonction"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Nationalité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`CNSS
+                                    </div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.cnss"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Profil
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.profil">
+                                            <option selected>choisie votre profil</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Diplôme
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">CV</div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addIng()"> Ajouter </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">List des cadres de gestion</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">prénom</th>
+                                    <th scope="col">Spesialité</th>
+
+                                    <th scope="col">Fonction</th>
+                                    <th scope="col">Nationalité</th>
+                                    <th scope="col">N`CNSS</th>
+                                    <th scope="col">Diplôme/cv</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+
+                                <tr *ngFor="let ele of cadres;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.name}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.prenom}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.specialite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.fonction}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.nationalite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.cnss}}</td>
+                                    <!--  -->
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></td>
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.fonction">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.cnss">
+                                    </td>
+
+                                    <!--  -->
+                                    <td><button class="btn"><i class="bi bi-filetype-pdf"
+                                                style="width:200px"></i></button> <button class="btn"><i
+                                                class="bi bi-filetype-pdf"></i></button></td>
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_cadr(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_cadr(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red" (click)="selected_cadr(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary" (click)="showADDcadrs = !showADDcadrs">Ajouter un
+                            cadre </button>
+
+                        <div class="card" *ngIf="showADDcadrs">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un cadre</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Prénom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Spesialité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Fonction
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.fonction"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Nationalité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`CNSS
+                                    </div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.cnss"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Diplôme
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">CV</div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addCadre()"> Ajouter </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">List des technicien</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Nom</th>
+                                    <th scope="col">prénom</th>
+                                    <th scope="col">Spesialité</th>
+                                    <th scope="col">Profil</th>
+                                    <th scope="col">Fonction</th>
+                                    <th scope="col">Nationalité</th>
+                                    <th scope="col">N`CNSS</th>
+                                    <th scope="col">Diplôme/cv</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+
+                                <tr *ngFor="let ele of tech;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.name}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.prenom}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.specialite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.profil}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.fonction}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.nationalite}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.cnss}}</td>
+                                    <!--  -->
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></td>
+                                    <td *ngIf="ele.expanded"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.profil">
+                                            <option selected>choisie votre profil</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.fonction">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.cnss">
+                                    </td>
+
+                                    <!--  -->
+                                    <td><button class="btn"><i class="bi bi-filetype-pdf"
+                                                style="width:200px"></i></button> <button class="btn"><i
+                                                class="bi bi-filetype-pdf"></i></button></td>
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_tech(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_tech(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red" (click)="selected_tech(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary" (click)="showADDTech = !showADDTech">Ajouter un
+                            Ingenieur </button>
+
+                        <div class="card" *ngIf="showADDTech">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Ingenieur</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.name"></div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Prénom
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.prenom"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Spesialité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.specialite">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Fonction
+                                    </div>
+                                    <div class="col-sm-3"><input type="text" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.fonction"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Nationalité
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.nationalite">
+                                            <option selected>choisie la form juridique</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`CNSS
+                                    </div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.cnss"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Profil
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.profil">
+                                            <option selected>choisie votre profil</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Diplôme
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">CV</div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addTech()"> Ajouter </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Moyen Humain/Personnel d'execution</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Année</th>
+                                    <th scope="col">N.M.A d'ouvrier qualifiés permanents</th>
+                                    <th scope="col">N.M.A de main d'ouvre permanents</th>
+                                    <th scope="col">N.M.A de main d'ouvre occasionnelles</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+
+                                <tr *ngFor="let ele of moyens_huamains;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.annee}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.nma_oqualifie}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.mna_o}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.mna_o_occasion}}</td>
+                                    <!--  -->
+
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.nma_oqualifie">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.mna_o">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.mna_o_occasion">
+                                    </td>
+
+
+                                    <!--  -->
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_Moyen_humain(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_Moyen_humain(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red"
+                                            (click)="selected_Moyen_humain(i)"><i class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary" (click)="showADDmoyenH = !showADDmoyenH">Ajouter un
+                            Moyen humain </button>
+
+                        <div class="card" *ngIf="showADDmoyenH">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Moyen humain</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Année
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie la specialité</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nombre
+                                        Moyen Annuel d'ouvrier qualifiés permanents</div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.nma_oqualifie"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nombre
+                                        Moyen Annuel de main d'ouvre permanents</div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.mna_o"></div>
+
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nombre
+                                        Moyen Annuel de main d'ouvre occasionnelles</div>
+                                    <div class="col-sm-3"><input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.mna_o_occasion"></div>
+                                </div>
+
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="assshowADDmoyenH()"> Ajouter </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Moyen Matêriels</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Secteur</th>
+                                    <th scope="col">Désignation du matériel</th>
+                                    <th scope="col">statut du matériel</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Année Service</th>
+                                    <th scope="col">Année d'acquisition</th>
+                                    <th scope="col">Facture/Relevé Bancaire/bilan certifié</th>
+                                    <th scope="col">valeur d'achat</th>
+                                    <th scope="col">type de règlement</th>
+                                    <th scope="col">N`de chèque</th>
+                                    <th scope="col">Date de réglement de chèque </th>
+                                    <th scope="col">Caractéristiques tech</th>
+                                    <th scope="col"></th>
+                                </tr>
+
+                                <tr *ngFor="let ele of moyens_materiel;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.secteur}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.d_materiel}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.statut_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.nombre_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.annee_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.annee_aquisition_m}}</td>
+                                    <td *ngIf="!ele.expanded"></td>
+                                    <td *ngIf="!ele.expanded">{{ele.valeur_achat_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.type_reg_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.n_cheque_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.date_reglement_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.carac_tech_m}}</td>
+                                    <!--  -->
+
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.secteur">
+                                            <option selected>choisie le secteur</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.d_materiel">
+                                            <option selected>choisie la Désignation du matériel</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.statut_m">
+                                            <option selected>choisie le statut du matériel</option>
+                                            <option value="Aquis">Aquis</option>
+                                            <option value="Leasing">Leasing</option>
+
+
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.nombre_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.annee_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.annee_aquisition_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded"></td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.valeur_achat_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.type_reg_m">
+                                            <option selected>choisie le type de reg du matériel</option>
+                                            <option value="Espèce">Espèce</option>
+                                            <option value="cheque">cheque</option>
+
+
+                                        </select>
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.n_cheque_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="date" class="form-control" style="height:20px"    [(ngModel)]="object.date_reglement_m">
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <textarea c class="form-control" style="height:20px"    [(ngModel)]="object.carac_tech_m"></textarea>
+                                    </td>
+
+
+                                    <!--  -->
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_travail_techboolean(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_travail_techboolean(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red"
+                                            (click)="selected_travail_techboolean(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary" (click)="showADDmoyenM = !showADDmoyenM">Ajouter un
+                            Moyen matériel </button>
+
+                        <div class="card" *ngIf="showADDmoyenM">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Moyen matériel</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Secteur
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.secteur">
+                                            <option selected>choisie le secteur</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">la
+                                        Désignation du matériel</div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.d_materiel">
+                                            <option selected>choisie la Désignation du matériel</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">le
+                                        statut du matériel</div>
+                                    <div class="col-sm-3">
+
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.statut_m">
+                                            <option selected>choisie le statut du matériel</option>
+                                            <option value="Aquis">Aquis</option>
+                                            <option value="Leasing">Leasing</option>
+
+
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Nombre
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.nombre_m">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Année
+                                        Servic</div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.annee_m">
+                                    </div>
+
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Année
+                                        d'acquisition</div>
+                                    <div class="col-sm-3">
+
+                                        <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.annee_aquisition_m">
+
+
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">valeur
+                                        d'achat</div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.valeur_achat_m">
+                                    </div>
+
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">type de
+                                        règlement</div>
+                                    <div class="col-sm-3">
+
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.type_reg_m">
+                                            <option selected>choisie le type de reg du matériel</option>
+                                            <option value="Espèce">Espèce</option>
+                                            <option value="cheque">cheque</option>
+                                        </select>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`de
+                                        chèque</div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.n_cheque_m">
+                                    </div>
+
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Date de
+                                        réglement de chèque</div>
+                                    <div class="col-sm-3">
+
+                                        <input type="date" class="form-control" style="height:20px"    [(ngModel)]="object.date_reglement_m">
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Caractéristiques tech</div>
+                                    <div class="col-sm-3">
+                                        <textarea c class="form-control" style="height:20px"    [(ngModel)]="object.carac_tech_m"></textarea>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">facture
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Relvé
+                                        bancaire</div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Bilan
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="assshowADDmoyenM()"> Ajouter </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Moyen humain | List des encadrants</p>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card"
+                                    style="box-shadow:none;background-color:#b6f2bc;margin-top: 0px;padding-top: 0px;">
+                                    <div class="card-body">
+                                        <h5>Joignez le 3 derniers bordoreaux CNSS</h5>
+                                        <div class="row">
+                                            <div class="col-sm-6">Bordereau 1</div>
+                                            <div class="col-sm-6">
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">Bordereau 2</div>
+                                            <div class="col-sm-6">
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">Bordereau 3</div>
+                                            <div class="col-sm-6">
+                                                <input type="file">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card"
+                                    style="box-shadow:none;background-color:#b6f2bc;margin-top: 0px;padding-top: 0px;">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-sm-6">Nombre total des ingenieur</div>
+                                            <div class="col-sm-6">
+                                                <input c class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">Nombre total des cadre de gestion</div>
+                                            <div class="col-sm-6">
+                                                <input c class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">Nombre total des technociens</div>
+                                            <div class="col-sm-6">
+                                                <input c class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Masse salariale de l'entreprise</p>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card"
+                                    style="box-shadow:none;background-color:#b6f2bc;margin-top: 0px;padding-top: 0px;">
+                                    <div class="card-body">
+                                        <h5>Joignez l'attestation de Masse salariale des 5 derniers années</h5>
+                                        <div class="row">
+                                            <div class="col-sm-6">Ajouter le ficher </div>
+                                            <div class="col-sm-6">
+                                                <input type="file">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card"
+                                    style="box-shadow:none;background-color:#b6f2bc;margin-top: 0px;padding-top: 0px;">
+                                    <div class="card-body">
+
+                                        <div class="row">
+                                            <div class="col-sm-6">Masse salariale de l'année précedente</div>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">CA de l'année précedente</div>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">Rapport de Masse salariale </div>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" style="height:20px"   >
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Locaux de l'entreprise</p>
+
+
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <button mat-button matStepperPrevious mat-raised-button color="primary">Back</button>
+            <button mat-button matStepperNext mat-raised-button color="primary">Next</button>
+        </div>
+
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Etape 3</ng-template>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Récupilatif des travaux techniques de l'entreprise</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Année</th>
+                                    <th scope="col">Désignation</th>
+                                    <th scope="col">Lieux travaux</th>
+                                    <th scope="col">Mantant</th>
+                                    <th scope="col">Delais d'execution</th>
+                                    <th scope="col">Date de reception</th>
+                                    <th scope="col">Maitre d'ouvrage</th>
+                                    <th scope="col">Maitre d'oeuvre</th>
+                                    <th scope="col">Attestation de Référence</th>
+                                    <th scope="col"></th>
+                                </tr>
+
+                                <tr *ngFor="let ele of travail_tech;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.annee}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.designation}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.lieux_m}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.mantant}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.delais_exe}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.date_recep}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.maitre_ouvrage}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.maitre_oeuvre}}</td>
+                                    <td *ngIf="!ele.expanded"></td>
+
+                                    <!--  -->
+
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie l'année</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                        </select>
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.designation">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.lieux_m">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.mantant">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.delais_exe">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="date" class="form-control" style="height:20px"    [(ngModel)]="object.date_recep">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.maitre_ouvrage">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.maitre_oeuvre">
+
+                                    </td>
+                                    <td></td>
+
+                                    <!--  -->
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_travail_techboolean(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_travail_techboolean(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red"
+                                            (click)="selected_travail_techboolean(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary"
+                            (click)="showADDTravail_tech = !showADDTravail_tech">Ajouter un Nouveau travail technique
+                        </button>
+                        <div class="card" *ngIf="showADDTravail_tech">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Nouveau travail technique</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Année
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie l'année</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Désignation</div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.designation">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Lieux
+                                        travaux
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.lieux_m">
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Mantant
+                                    </div>
+                                    <div class="col-sm-3"> <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.mantant">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Delais
+                                        d'execution
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.delais_exe">
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Date de
+                                        reception</div>
+                                    <div class="col-sm-3"> <input type="date" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.date_recep">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Maitre
+                                        d'ouvrage
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.maitre_ouvrage">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Maitre
+                                        d'oeuvre
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.maitre_oeuvre">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Attestation de Référence</div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addTravail_tech()"> Ajouter </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Liste des prestations</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Année</th>
+                                    <th scope="col">N`Marché</th>
+                                    <th scope="col">Objet</th>
+                                    <th scope="col">N`de facture du décompte</th>
+                                    <th scope="col">CA HT Réel(sans sous traitance ou groupement)</th>
+                                    <th scope="col">CA TTC Réel(sans sous traitance ou groupement)</th>
+                                    <th scope="col">Décompte/facture</th>
+                                    <th scope="col">montant/secteur/prestation</th>
+                                    <th scope="col">Secteur</th>
+                                 
+                                    <th scope="col"></th>
+                                </tr>
+
+                                <tr *ngFor="let ele of prestation;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.annee}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.n_marche}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.Objet}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.facture_de_decompte}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.ca_ht}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.ca_ttc}}</td>
+                                    <td *ngIf="!ele.expanded"></td>
+                                    <td *ngIf="!ele.expanded">{{ele.montant_secteur_prestation}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.secteur}}</td>
+                                   
+
+                                    <!--  -->
+
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie l'année</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                        </select>
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.n_marche">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.Objet">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.facture_de_decompte">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.ca_ht">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <input type="date" class="form-control" style="height:20px"    [(ngModel)]="object.ca_ttc">
+
+                                    </td>
+
+                                    <!-- <td *ngIf="ele.expanded"></td> -->
+
+                                    <td *ngIf="ele.expanded">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.montant_secteur_prestation">
+
+                                    </td>
+                                    <td *ngIf="ele.expanded">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.secteur">
+                                        <option selected>choisie le secteur</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    </td>
+                                    <td></td>
+
+                                    <!--  -->
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_showADDPrestation(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_showADDPrestation(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red"
+                                            (click)="selected_showADDPrestation(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary"
+                            (click)="showADDPrestation = !showADDPrestation">Ajouter une Nouvelle prestation
+                        </button>
+                        <div class="card" *ngIf="showADDPrestation">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter une Nouvelle prestation</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Année
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.annee">
+                                            <option selected>choisie l'année</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        N`Marché</div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.n_marche">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Objet
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.Objet">
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">N`de facture du décompte
+                                    </div>
+                                    <div class="col-sm-3"> <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.facture_de_decompte">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">CA HT Réel(sans sous traitance ou groupement)
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.ca_ht">
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">CA TTC Réel(sans sous traitance ou groupement)</div>
+                                    <div class="col-sm-3"> <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.ca_ttc">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Décompte/facture
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="file">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Montant/secteur/prestation
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" style="height:20px"    [(ngModel)]="object.montant_secteur_prestation">
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Secteur</div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.secteur">
+                                        <option selected>choisie le secteur</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>   
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addPrestation()"> Ajouter </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                <div class="card-header">
+
+                <p style="text-align:center">Capacité Financière des dernières Années </p>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"  pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                        <tbody>
+                            <tr class="dataGridHead alignCenter">
+                                <th scope="col">Année</th>
+                                <th scope="col">Total CA HT</th>
+                                <th scope="col"> Total CA TTC</th>
+                                <th scope="col">Mantant des salaires</th>
+                                                       
+                               
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    >
+                                    <option selected>choisie l'année</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                   >
+                                    <option selected>choisie l'année</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    >
+                                    <option selected>choisie l'année</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    >
+                                    <option selected>choisie l'année</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                               
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    [(ngModel)]="object.annee">
+                                    <option selected>choisie l'année</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                                <td><input type="number" class="form-control" style="height:20px"   ></td>
+                               
+                            </tr>
+                            
+
+                    </table>
+                    <div class="row">
+                        <div class="col-sm-6"  style="background-color: rgba(162, 235, 195, 0.726);">Joingnez l'attestation du CA des 5 années précedants </div>
+                        <div class="col-sm-6"> <input type="file" ></div>
+                    </div>
+                   
+
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+        <div>
+            <button mat-button matStepperPrevious mat-raised-button color="primary">Back</button>
+            <button mat-button matStepperNext mat-raised-button color="primary">Next</button>
+        </div>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Etape 4</ng-template>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">List des travaux en sous traitance</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Secteur</th>
+                                    <th scope="col">Qualifcation</th>
+                                    <th scope="col">Type de travaux</th>
+                                    <th scope="col">% du cA de sous-traitance par qualification</th>
+                                    <th scope="col">N` de marché</th>
+                                    <th scope="col"></th>
+                                </tr>
+
+                                <tr *ngFor="let ele of sous_traitance;let i= index">
+                                    <td *ngIf="!ele.expanded">{{ele.secteur}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.qualification}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.typeT}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.ca_sTraitance}}</td>
+                                    <td *ngIf="!ele.expanded">{{ele.n_marche}}</td>
+                                    
+                                    
+
+                                    <!--  -->
+
+                                    
+
+                                    <!--  -->
+                                    <td>
+                                        <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                            (click)="selected_sous_traitance(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-pencil"></i></button>
+                                        <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px"
+                                            (click)="selected_sous_traitance(i);ele.expanded =!ele.expanded;"><i
+                                                class="bi bi-check"></i></button>
+                                        <button type="button" id="pkdpkf" class="myButton2"
+                                            style="margin:10px;background-color:red"
+                                            (click)="selected_sous_traitance(i)"><i
+                                                class="bi bi-trash2"></i></button>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                        <button mat-raised-button color="primary"
+                            (click)="showADDsous_traitance = !showADDsous_traitance">Ajouter un Nouveau travail en sous traitance
+                        </button>
+                        <div class="card" *ngIf="showADDsous_traitance">
+                            <p
+                                style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                                Ajouter un Nouveau travail en sous traitance</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Secteur
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                            [(ngModel)]="object.secteur">
+                                            <option selected>choisie le secteur</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        Qualifcation</div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.qualification">
+                                        <option selected>choisie la qualification</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Type de travaux
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.typeT">
+                                        <option selected>choisie le Type de travaux</option>
+                                        <option value="sous traitance">sous traitance</option>
+                                        <option value="Groupement">Groupement</option>
+                                    
+                                    </select>
+                                    </div>
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">% du cA de sous-traitance par qualification
+                                    </div>
+                                    <div class="col-sm-3"> 
+                                        <input type="number" class="form-control" style="height:20px"   
+                                            [(ngModel)]="object.ca_sTraitance">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                        N` de marché                                   </div>
+                                    <div class="col-sm-3">
+                                        <input type="number" class="form-control" style="height:20px"    [(ngModel)]="object.n_marche">
+
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                            <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                                (click)="addsous_traitance()"> Ajouter </button>
+                        </div>
+                    </div>
+                   
+
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Tableau de répartition du CA par secteur</p>
+                    </div>
+                    <div class="card-body">
+                        <h5 style="text-align:center;background-color:#F2CD5C">Capacité Financière des cinq derniers années</h5>
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                            pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                            <tbody>
+                                <tr class="dataGridHead alignCenter">
+                                    <th scope="col">Année</th>
+                                    <th scope="col">Total CA Réel par Année</th>
+                                    <th scope="col">Secteur </th>
+                                    <th scope="col">Total CA reel par Secteur</th>
+                                  
+                                </tr>
+                                <ng-container *ngFor="let ele of ca_par_secteur">
+                                    <tr >
+                                        <td style="background-color:#b6f2bc">{{ele.annee}}</td>
+                                        <td style="background-color:#DFFFD8">
+                                            <div class="input-group mb-3">
+                                           
+                                                <input type="number" class="form-control" style="height:20px"    [(ngModel)]="ele.total_ca_ht">
+                                                <span class="input-group-text">(HT)</span>
+                                              </div>
+                                            <div class="input-group mb-3">
+                                           
+                                                <input type="number"  class="form-control" style="height:20px"    [(ngModel)]="ele.total_ca_ttc">
+                                                <span class="input-group-text">  (TTC)</span>
+                                              </div>
+                                             
+                                            
+                                            
+                                          </td>
+                                         
+                                          
+                                          <td style="background-color:#DFFFD8"><button type="button" class="btn btn-primary" (click)="ele.secteurs.push({})">+</button></td>
+                                          <td style="background-color:#DFFFD8"></td>
+                                    </tr>
+                                    <ng-container *ngFor="let item of ele.secteurs;let i = index">
+                                        <tr >
+                                           <td class="classA"></td> 
+                                           <td>
+                                            
+                                           </td> 
+                                           <td>
+                                            <select class="form-select" style="height:25px" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                        </td> 
+                                           <td>
+                                            <div class="input-group mb-3">
+                                           
+                                                <input type="number" class="form-control" style="height:20px"    [(ngModel)]="item.total_par_secteur_ht">
+                                                <span class="input-group-text">DH(HT)</span>
+                                              </div>
+                                            <div class="input-group mb-3">
+                                           
+                                                <input type="number" class="form-control" style="height:20px"    [(ngModel)]="item.total_par_secteur_ht">
+                                                <span class="input-group-text">DH(TTC)</span>
+                                              </div>
+                                            </td> 
+                                         
+                                        </tr>
+    
+                                    </ng-container>
+                                </ng-container>
+                                
+                                
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious mat-raised-button color="primary">Back</button>
+                <button mat-button matStepperNext mat-raised-button color="primary">Next</button>
+            </div>
+    </mat-step>
+
+    <mat-step>
+        <ng-template matStepLabel>Etape 5</ng-template>
+        <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <div class="card">
+                    <div class="card-header">
+                        
+                        <p style="text-align:center">Qualification demandée</p>
+
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                        pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                        <tbody>
+                            <tr class="dataGridHead alignCenter">
+                                <th scope="col">Secteur</th>
+                                <th scope="col">Qualifcation</th>
+                                <th colspan="2">Type de Demande</th>
+    
+                                <th scope="col"></th>
+                            </tr>
+                            <tr class="dataGridHead alignCenter" style="background-color:#f2cc5ca1">
+                                <td scope="col"></td>
+                                <td scope="col"></td>
+                                <td >provisoir</td>
+                                <td >Définitive</td>
+    
+                                <td scope="col"></td>
+                            </tr>
+
+                            <tr *ngFor="let ele of qualifications;let i= index">
+                                <td *ngIf="!ele.expanded">{{ele.secteur}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.qualification}}</td>
+                                <td *ngIf="!ele.expanded"><img [src]="ele.definitive_prov=='provisoir'?'../../assets/accept.png':'../../assets/warning.png'" width="45px" heigth="auto"></td>
+                                <td *ngIf="!ele.expanded"><img [src]="ele.definitive_prov=='Definitive'?'../../assets/accept.png':'../../assets/warning.png'" width="45px" heigth="auto"></td>
+           
+                                <td>
+                                    <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                        (click)="selected_qualification(i);ele.expanded =!ele.expanded;"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                        style="margin:10px"
+                                        (click)="selected_qualification(i);ele.expanded =!ele.expanded;"><i
+                                            class="bi bi-check"></i></button>
+                                    <button type="button" id="pkdpkf" class="myButton2"
+                                        style="margin:10px;background-color:red"
+                                        (click)="selected_qualification(i)"><i
+                                            class="bi bi-trash2"></i></button>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <button mat-raised-button color="primary"
+                        (click)="showADDqualifications = !showADDqualifications">Ajouter un Nouvelle qualification
+                    </button>
+                    <div class="card" *ngIf="showADDqualifications">
+                        <p
+                            style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                            Ajouter un Nouveau travail en sous traitance</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Secteur
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.secteur">
+                                        <option selected>choisie le secteur</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                    Qualifcation</div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    [(ngModel)]="object.qualification">
+                                    <option selected>choisie la qualification</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Type de demande
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    [(ngModel)]="object.definitive_prov">
+                                    <option selected>choisie le Type de demande</option>
+                                    <option value="provisoir">provisoir</option>
+                                    <option value="Definitive">Definitive</option>
+                                
+                                </select>
+                                </div>
+                              
+                            </div>
+                        
+                           
+                        </div>
+                        <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                            (click)="addqualifications()"> Ajouter </button>
+                    </div>
+
+                        </div>
+
+                        </div>
+                <div class="card">
+                    <div class="card-header">
+                        <p style="text-align:center">Qualifications attribuées</p>
+                        
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered " id="inputss" cellspacing="0" rules="all"
+                        pagerstyle-alwaysvisible="True" readonly="true" style="width: 100%;">
+                        <tbody>
+                            <tr class="dataGridHead alignCenter">
+                                <th scope="col">Secteur</th>
+                                <th scope="col">Qualifcation</th>
+                                <th scope="col">classe</th>
+                                <th scope="col">N` certificat
+                                </th>
+                                <th colspan="2">Date de validité</th>
+    
+                                <th scope="col"></th>
+                            </tr>
+                            <tr class="dataGridHead alignCenter" style="background-color:#f2cc5ca1">
+                                <td scope="col"></td>
+                                <td scope="col"></td>
+                                <td scope="col"></td>
+                                <td scope="col"></td>
+                                <td scope="col">Du</td>
+                                <td scope="col">Vers</td>
+                              
+                            </tr>
+
+                            <tr *ngFor="let ele of qualifications_deja;let i= index">
+                                <td *ngIf="!ele.expanded">{{ele.secteur}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.qualification}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.class}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.n_certif}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.du}}</td>
+                                <td *ngIf="!ele.expanded">{{ele.vers}}</td>
+           
+                                <td>
+                                    <button type="button" id="pkdpkf" class="myButton2" style="margin:10px"
+                                        (click)="selected_qualifications_deja(i);ele.expanded =!ele.expanded;"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button *ngIf="ele.expanded" type="button" id="pkdpkf" class="myButton2"
+                                        style="margin:10px"
+                                        (click)="selected_qualifications_deja(i);ele.expanded =!ele.expanded;"><i
+                                            class="bi bi-check"></i></button>
+                                    <button type="button" id="pkdpkf" class="myButton2"
+                                        style="margin:10px;background-color:red"
+                                        (click)="selected_qualifications_deja(i)"><i
+                                            class="bi bi-trash2"></i></button>
+                                </td>
+                            </tr>
+
+
+
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <button mat-raised-button color="primary"
+                        (click)="showADDqualifications_deja = !showADDqualifications_deja">Ajouter un Nouvelle qualification
+                    </button>
+                    <div class="card" *ngIf="showADDqualifications_deja">
+                        <p
+                            style="font-size: 12;text-align:center;background-color:#4D455D;color:wheat;font-weight: 900;">
+                            Ajouter un Nouveau travail en sous traitance</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Secteur
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                        [(ngModel)]="object.secteur">
+                                        <option selected>choisie le secteur</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                    Qualifcation</div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    [(ngModel)]="object.qualification">
+                                    <option selected>choisie la qualification</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Classe
+                                </div>
+                                <div class="col-sm-3">
+                                    <select class="form-select" style="height:25px" aria-label="Default select example"
+                                    [(ngModel)]="object.class">
+                                    <option selected>choisie le Type de demande</option>
+                                    <option value="1">1</option>
+                                    <option value="1">1</option>
+                                    <option value="1">1</option>
+                                    <option value="1">1</option>
+                                    <option value="1">1</option>
+
+                                
+                                </select>
+                                </div>
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">
+                                    N` certificat </div>
+                                <div class="col-sm-3">
+                                   <input type="number" class="form-control"  [(ngModel)]="object.n_certif">
+                                </div>
+                              
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">Du
+                                    
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="date" class="form-control" [(ngModel)]="object.du">
+
+                                </div>
+                            
+                                <div class="col-sm-3" style="background-color: rgba(162, 235, 195, 0.726);">vers
+                                    
+                                </div>
+                                <div class="col-sm-3">
+                                    <input type="date" class="form-control" [(ngModel)]="object.vers">
+
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <button type="button" class="btn btn-primary" style="background-color: #609966;"
+                            (click)="addqualifications_deja()"> Ajouter </button>
+                    </div>
+
+                        </div>
+
+                        </div>
+
+                </div>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious mat-raised-button color="primary">Back</button>
+                    <button mat-button matStepperNext mat-raised-button color="primary">Next</button>
+                </div>
+                </mat-step>
+
+                <mat-step>
+                    <ng-template matStepLabel>Etape 6</ng-template>
+                    <div class="card">
+                        <div class="card-header"></div>
+                        <div class="card-body">
+                            <div class="seven">
+                                <h1>Documents</h1>
+                              </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card" style="background-color:#b6f2bc">
+                                        <div class="row" style="padding:2%">
+                                            <div class="col-sm-6">Formulaire</div>
+                                            <div class="col-sm-6"><input type="file" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card" style="background-color:#b6f2bc">
+                                        <div class="row" style="padding:2%">
+                                            <div class="col-sm-6">Déclaration sur l'honneur de l'enticité </div>
+                                            <div class="col-sm-6"><input type="file" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card" style="background-color:#b6f2bc">
+                                        <div class="row" style="padding:2%">
+                                            <div class="col-sm-6">Déclaration sur l'honneur (Attestations de salaires + Diplôms)</div>
+                                            <div class="col-sm-6"><input type="file" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card" style="background-color:#b6f2bc">
+                                        <div class="row" style="padding:2%">
+                                            <div class="col-sm-6">Déclaration sur l'honneur (marchés +Décomptes) </div>
+                                            <div class="col-sm-6"><input type="file" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card" style="background-color:#b6f2bc">
+                                        <div class="row" style="padding:2%">
+                                            <div class="col-sm-6">Déclaration sur l'honneur (Attestations de réferences)</div>
+                                            <div class="col-sm-6"><input type="file" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                            </div>
+                           
+                            </div>
+                            </div>
+                            <div>
+                                <button mat-button matStepperPrevious mat-raised-button color="primary">Back</button>
+                                <!-- <button mat-button matStepperNext mat-raised-button color="primary">Next</button> -->
+                            </div>
+                        </mat-step>
+</mat-stepper>
